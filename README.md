@@ -11,7 +11,7 @@ This project is being developed from scratch, including:
 
 The goal of MCC is to explore compiler implementation and language design while creating a practical programming language.
 
->> [#] **Status:** Work In Progress 🚧
+>> [###] **Status:** Work In Progress 🚧
 
 ---
 
@@ -24,19 +24,19 @@ The goal of MCC is to explore compiler implementation and language design while 
 - [x] `while`
 - [x] `for`
 - [x] AST generation
-- [x] x86-64 Assembly generation (partial)
+- [x] x86/x86-64 Assembly generation (partial)
 - [x] Function parser
 
 ## Planned Features
 
 - [ ] Function code generation
-- [ ] `return`
+- [ ] `return <value...>`
 - [ ] Function call
 - [ ] Pointer
 - [ ] Reference
 - [ ] Array
-- [ ] `import`
-- [ ] Standard library (`basicio.mc`)
+- [ ] `import "path/to/lib..."`
+- [ ] Standard library (`basicio.mc`, ...)
 - [ ] Optimizer
 
 ---
@@ -44,10 +44,13 @@ The goal of MCC is to explore compiler implementation and language design while 
 ## Example
 
 ```mcc
-int a = 10;
+char a = 255;
+short b = 32767;
+int c = 30 * 12;
+float x = 3.14;
+double y = 2.71
 
-if (a > 5)
-{
+if (a == 30 * 12) {
     a = 20;
 }
 ```
