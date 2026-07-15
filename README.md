@@ -48,11 +48,12 @@ char a = 255;
 short b = 32767;
 int c = 30 * 12;
 float x = 3.14;
-double y = 2.71
+double y = 2.71;
 
 if (a == 30 * 12) {
     a = 20;
 }
+while (c < 1234) { c = c + c; }
 ```
 
 ---
